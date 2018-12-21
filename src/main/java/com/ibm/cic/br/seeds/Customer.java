@@ -7,7 +7,7 @@ import org.apache.commons.beanutils.BeanUtils;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Date;
 
-public class Customer {
+public class Customer extends Prospect {
 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date conversionDate;
@@ -18,6 +18,7 @@ public class Customer {
         }catch(InvocationTargetException | IllegalAccessException e){
             System.err.println("Unable to copy properties.");
         }
+
         this.conversionDate = new Date();
     }
 
