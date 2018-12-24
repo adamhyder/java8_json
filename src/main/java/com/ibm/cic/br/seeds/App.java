@@ -48,7 +48,7 @@ public class App {
                 System.out.println((k + ":" + v))
         );
         
-       // System.out.println("------------------------------------------EXAMPLE 4--------------------------------------------------------");
+        System.out.println("------------------------------------------EXAMPLE 4--------------------------------------------------------");
         prospects = $app.example4(prospects);
         prospects.forEach(System.out::println);
         
